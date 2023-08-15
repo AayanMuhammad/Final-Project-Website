@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+  }
+  
+  .main {
+    background: url("image/hunger.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(48, 47, 47, 0.2), rgba(77, 77, 77, 0.2));
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(80, 76, 76);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 50px;
+  }
+  
+  .menu {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    display: none !important;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust the logo size */
+    height: auto;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 3.8rem;
+  }
+  
+  .title a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    animation: pulsate 2s infinite;
+  }
+  
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Subtract the navbar height */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    background: none; /* Remove background from .center-content */
+    animation: colorChange 3s infinite; /* Apply the animation to the center content */
+    text-shadow: solid black;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .mission-statement {
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: colorChange 3s infinite; /* Apply the animation to the center content */
+    color: rgb(0, 0, 0);
+    text-shadow: -1px 0px 0px #fff, 1px 0px 0px #fff, 0px -1px 0px #fff,
+      0px 1px 0px #fff;
+    /* Add this line to set the text color to white */
+  }
+  
+  .center-content p {
+    /* text-shadow: -1px 0px 0px #fff, 1px 0px 0px #fff, 0px -1px 0px #fff,
+      0px 1px 0px #fff; */
+    color: #ffffff;
+    text-shadow: 2px 2px #000;
+  }
+  
+  .black-button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+    text-decoration: none;
+    z-index: 10;
+  }
+  
+  .black-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+  }
+  
+  .black-button i {
+    color: red;
+    margin: 0 5px;
+    animation: infinite example 1.3s alternate;
+  }
+  
+  @keyframes example {
+    from {
+      scale: 1;
+    }
+    to {
+      scale: 1.5;
+    }
+  }
+  
+  .learn {
+    padding: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .learn h2 {
+    font-family: "Merriweather Sans";
+    margin: 1rem 0;
+    font-weight: 300;
+  }
+  
+  .learn p {
+    margin: 1rem 0;
+  }
+  
+  .facts {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+    flex-wrap: wrap;
+  }
+  
+  .fact {
+    border-radius: 11px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
+  
+  .facts img {
+    height: 400px;
+    width: auto;
+  }
+  
+  .ranks,
+  .donate {
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .rank,
+  .d-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 3rem 1rem;
+    text-align: center;
+    border-radius: 11px;
+    width: 250px;
+    margin: 3rem;
+  }
+  
+  .rank img,
+  .d-card img {
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .rank h2,
+  .d-card h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .rank h3 {
+    font-size: 0.8rem;
+    margin: 1rem;
+  }
+  
+  .rank-title {
+    margin-top: 7rem;
+    text-align: center;
+  }
+  
+  .volunteer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  
+  .v-card {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .v-card div {
+    margin-left: 4rem;
+  }
+  
+  .v-title,
+  .a-title,
+  .d-title {
+    margin-top: 6rem;
+    text-align: center;
+  }
+  
+  .aware {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .aware ul {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .d-card img {
+    height: 150px;
+  }
+  
+  .d-card a {
+    text-decoration: underline;
+  }
+  
+  .source {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 800px) {
+    .navbar {
+      justify-content: space-between;
+      height: 80px;
+      padding-bottom: 20px;
+      font-size: 90%;
+    }
+    .title {
+      margin: 10px 0;
+    }
+    .navbar-links {
+      flex-direction: column;
+      text-align: center;
+      width: 100vw;
+      background-color: rgb(80, 76, 76);
+      transition: all 1s;
+      position: absolute;
+      position: absolute;
+      top: -100vh;
+      margin: 0;
+      left: 0;
+      padding-bottom: 1rem;
+      z-index: 0;
+    }
+  
+    .up {
+      top: 10vh;
+    }
+  
+    .menu {
+      display: inline-block !important;
+    }
+  }
